@@ -33,3 +33,17 @@ console.log("6. SYMBOL: Sao Iguais?", chave1 == chave2); //false
 //7. NULL - Valor intecionalmente vazio(ex: campo sem resposta)
 let resposta = null;
 console.log("7.NULL: Resposta ainda nao recebida", resposta, "Tipo:", typeof resposta);
+
+let aluno = {
+nome: "Lucas",            //STRING
+idade: 18,                //NUMBER
+matricula: 123456789,     //BIGINT
+ativo: true,              //BOOLEAN
+telefone: undefined,      //UNDEFINED
+token: Symbol("token"),   //SYMBOL
+responsavel: null         //NULL
+
+};
+
+console.log("Objeto aluno com diferentes tipos primitivos:");
+console.log(aluno);
