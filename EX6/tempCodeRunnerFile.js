@@ -1,0 +1,1 @@
+console.log("querySelectorAll:"); todosItens.forEach(li => console.log(li.innerText));
