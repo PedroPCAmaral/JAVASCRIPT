@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+
+  <title>Atividade 2 - Adicionar no DOM</title>
+
+</head>
+<body>
+  <h1>Atividade 2</h1>
+  <div id="area"></div>
+  <button id="adicionar">Adicionar Parágrafo</button>
+
+  <script>
+    
+    const area = document.getElementById("area");
+    const botao = document.getElementById("adicionar");
+
+
+    botao.addEventListener("click", function() {
+      
+      const novoParagrafo = document.createElement("p");
+
+      
+      novoParagrafo.textContent = "Texto adicionado dinamicamente!";
+
+      
+      novoParagrafo.style.backgroundColor = "lightblue";
+      novoParagrafo.style.padding = "10px";
+      novoParagrafo.style.borderRadius = "8px";
+      novoParagrafo.style.marginTop = "8px";
+
+      
+      area.appendChild(novoParagrafo);
+    });
+    
+  </script>
+
+</body>
+</html>

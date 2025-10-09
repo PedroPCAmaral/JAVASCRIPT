@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  
+  <title>Atividade 1 - Criar Elemento</title>
+
+</head>
+<body>
+  <h1>Atividade 1</h1>
+  <button id="botaoCriar">Criar Parágrafo</button>
+  <p id="mensagem"></p>
+
+  <script>
+    
+    const botao = document.getElementById("botaoCriar");
+
+    
+    botao.addEventListener("click", function() {
+      
+      const novoElemento = document.createElement("p");
+
+      
+      novoElemento.textContent = "Parágrafo criado dinamicamente!";
+
+      
+      console.log(novoElemento);
+
+      
+      console.log(novoElemento.tagName);
+    });
+  </script>
+</body>
+</html>

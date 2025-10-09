@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+
+<title>Atividade 4 - Inserir Antes</title>
+
+</head>
+<body>
+
+    <h1>Inserindo Antes</h1>
+
+<ul id="minhaLista">
+  <li id="item2">Item 2</li>
+  <li>Item 3</li>
+</ul>
+
+<button id="inserirItem1">Inserir Item 1 Antes do Item 2</button>
+<p id="mensagem"></p>
+
+<script>
+    
+
+const minhaLista = document.getElementById("minhaLista");
+const item2 = document.getElementById("item2");
+const botao = document.getElementById("inserirItem1");
+
+
+botao.addEventListener("click", function() {
+    
+    const itemExistente = document.querySelector("#item1");
+
+    if (itemExistente) {
+        alert("Item 1 já inserido.");
+        return; 
+    }
+
+    
+    const novoItem = document.createElement("li");
+    novoItem.id = "item1";
+    novoItem.textContent = "Item 1";
+
+    
+    minhaLista.insertBefore(novoItem, item2);
+});
+
+</script>
+
+</body>
+</html>
